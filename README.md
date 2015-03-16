@@ -11,6 +11,7 @@ The obtained dataset has been randomly partitioned into two sets, where 70% of t
 
 Column headers
 subjectID: Each volunteer individual ID number (between 1 -30 inclusive)
+
 Activity: Six different activities from which the measurements were taken:
 1.	Walking  (Activity label 1 is walking)
 2.	Walkingupstairs
@@ -18,7 +19,11 @@ Activity: Six different activities from which the measurements were taken:
 4.	Sitting
 5.	Standing
 6.	Laying
+
 total_acc_x (Y or Z): The acceleration signal from the smartphone accelerometer X axis in standard gravity units ‘g’.
+
 body_acc_X (Y or Z):  The body acceleration signal obtained by subtracting the gravity from the total acceleration.
+
 body_gyro_X (Y or Z): The angular velocity vector measured by the gyroscope for each sample. The units are radians/second.
+
 Mean(xxx): The average values of all xxx measurements.
