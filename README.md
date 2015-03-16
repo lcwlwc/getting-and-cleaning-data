@@ -14,10 +14,15 @@ subjectID: Each volunteer individual ID number (between 1 -30 inclusive)
 
 Activity: Six different activities from which the measurements were taken:
 1.	Walking  (Activity label 1 is walking)
+
 2.	Walkingupstairs
+
 3.	Walkingdownstairs
+
 4.	Sitting
-5.	Standing
+
+5.  Standing
+
 6.	Laying
 
 total_acc_x (Y or Z): The acceleration signal from the smartphone accelerometer X axis in standard gravity units ‘g’.
