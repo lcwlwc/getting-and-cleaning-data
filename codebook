@@ -1,0 +1,48 @@
+**codebook for run_analysis.*
+
+This codebook shows the work flow from reading the raw data files to obtain the final output.
+
+The file works by first reading the files from the two main folders: “test” and “train”
+
+Following which I renamed the activity labels into the various activities as such to remove ambiguities:
+
+1.	Walking  (Activity label 1 is walking)
+2.	Walkingupstairs
+3.	Walkingdownstairs
+4.	Sitting
+5.	Standing
+6.	Laying
+
+The next step was to form up the table for the Training Subjects, by cbinding the following files:
+
+1.	subject_train.txt   (shows the ID number of volunteers)
+
+2.	Y_train.txt   (Activity lables)
+
+3.	body_acc_X_train.txt
+
+4.	body_acc_Y_train.txt   
+
+5.	body_acc_Z_train.txt
+
+6.	body_gyro_X_train.txt
+
+7.	body_gyro_Y_train.txt
+
+8.	body_gyro_Z_train.txt
+
+9.	total_acc_X_train.txt
+
+10.	total_acc_Y_train.txt
+
+11.	total_acc_Z_train.txt
+
+Files 3 to 11 are found in the “Inertia Signals” sub-folder under “Train” 
+
+The same was then repeated to construct a table for the Test subjects.
+
+Next the two tables were combined and renamed to be “combined” using “rbind” and columns were renamed by removing the “test” and “train” words.
+
+Finally the “dplyr” package was loaded and combined table was grouped by subjectID and Activity. The grouped table is renamed to be combinedgrouped.
+.
+And the means of each variable by activity and by subject was calculated and stored as mean_byID_byactivity.
