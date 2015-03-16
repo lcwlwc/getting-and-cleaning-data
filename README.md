@@ -13,6 +13,7 @@ Column headers
 subjectID: Each volunteer individual ID number (between 1 -30 inclusive)
 
 Activity: Six different activities from which the measurements were taken:
+
 1.	Walking  (Activity label 1 is walking)
 
 2.	Walkingupstairs
